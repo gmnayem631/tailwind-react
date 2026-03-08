@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "price": 20,
+    "duration": "month",
+    "description": "Ideal for beginners who want basic access to gym facilities.",
+    "features": [
+      "Access to gym equipment",
+      "Cardio training area access",
+      "Locker room access",
+      "Free fitness assessment",
+      "1 group class per week",
+      "Open gym hours access",
+      "Basic stretching area",
+      "Free WiFi",
+      "Water station access"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard Plan",
+    "price": 35,
+    "duration": "month",
+    "description": "Best for regular gym members looking for guided training.",
+    "features": [
+      "Full gym access",
+      "Cardio and strength training zones",
+      "Locker room and shower access",
+      "5 group classes per week",
+      "Basic diet guidelines",
+      "Free fitness assessment",
+      "Workout tracking support",
+      "Access to stretching and mobility area",
+      "Free WiFi",
+      "Water and energy drink station"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Plan",
+    "price": 60,
+    "duration": "month",
+    "description": "Perfect for members who want advanced training support.",
+    "features": [
+      "24/7 gym access",
+      "Unlimited group classes",
+      "Personal trainer sessions (2 per month)",
+      "Customized workout plan",
+      "Nutrition consultation",
+      "Body composition analysis",
+      "Locker room and towel service",
+      "Access to sauna and recovery area",
+      "Priority equipment booking",
+      "Free protein shake per week",
+      "Access to fitness workshops"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Elite Plan",
+    "price": 90,
+    "duration": "month",
+    "description": "Complete premium fitness experience with personal coaching.",
+    "features": [
+      "24/7 gym access",
+      "Unlimited group classes",
+      "Weekly personal trainer sessions",
+      "Fully customized workout program",
+      "Personalized nutrition and diet plan",
+      "Monthly body composition tracking",
+      "Access to spa, sauna, and recovery zone",
+      "Towel and locker service",
+      "Priority class booking",
+      "Free supplement consultation",
+      "VIP lounge access",
+      "Exclusive fitness workshops and events"
+    ]
+  }
+]
