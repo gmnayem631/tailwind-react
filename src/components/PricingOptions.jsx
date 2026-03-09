@@ -2,8 +2,9 @@ import React, { use } from "react";
 import PricingCard from "./PricingCard";
 
 const PricingOptions = ({ pricingPromise }) => {
-  const pricingData = use(pricingPromise);
-  console.log(pricingData);
+  const pricingResponse = use(pricingPromise);
+  const pricingData = pricingResponse.data;
+
   return (
     <div>
       <h2 className="text-5xl">Get Our Membership</h2>

@@ -1,13 +1,16 @@
-import React from "react";
-import { Pie, PieChart, Tooltip } from "recharts";
+import React, { use } from "react";
+import { Legend, Pie, PieChart, Tooltip } from "recharts";
 
-const GymMembership = () => {
-  const gymMemberShip = [
-    { plan: "Basic", members: 40 },
-    { plan: "Standard", members: 65 },
-    { plan: "Premium", members: 35 },
-    { plan: "Elite", members: 20 },
-  ];
+const GymMembership = ({ membershipPromise }) => {
+  // const gymMemberShip = [
+  //   { plan: "Basic", members: 40 },
+  //   { plan: "Standard", members: 65 },
+  //   { plan: "Premium", members: 35 },
+  //   { plan: "Elite", members: 20 },
+  // ];
+  const gymMemberShipData = use(membershipPromise);
+  // const gymMemberShipData = membershipResponse.data;
+  console.log(gymMemberShipData);
   return (
     <div>
       <PieChart
@@ -20,7 +23,7 @@ const GymMembership = () => {
         }}
       >
         <Pie
-          data={gymMemberShip}
+          data={gymMemberShipData}
           dataKey={"members"}
           cx="50%"
           cy="50%"
@@ -31,6 +34,7 @@ const GymMembership = () => {
           nameKey={"plan"}
         />
         <Tooltip />
+        <Legend />
       </PieChart>
     </div>
   );

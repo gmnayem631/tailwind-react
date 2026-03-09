@@ -8,10 +8,12 @@ import ResultCharts from "./components/ResultCharts";
 import ResultBarChart from "./components/ResultBarChart";
 import GymMembership from "./components/GymMembership";
 import GymAreaChart from "./components/GymAreaChart";
+import axios from "axios";
 
-const pricingPromise = fetch("./pricingData.json").then((response) =>
-  response.json(),
-);
+const pricingPromise = axios.get("./pricingData.json");
+const membershipPromise = axios
+  .get("./gymMemberShip.json")
+  .then((res) => res.data);
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
 
         <ResultCharts></ResultCharts>
         <ResultBarChart></ResultBarChart>
-        <GymMembership></GymMembership>
+        <GymMembership membershipPromise={membershipPromise}></GymMembership>
         <GymAreaChart></GymAreaChart>
       </main>
     </>

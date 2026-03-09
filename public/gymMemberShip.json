@@ -1,0 +1,6 @@
+[
+  { "plan": "Basic", "members": 40 },
+  { "plan": "Standard", "members": 65 },
+  { "plan": "Premium", "members": 35 },
+  { "plan": "Elite", "members": 20 }
+]
