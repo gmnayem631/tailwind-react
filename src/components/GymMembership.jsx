@@ -1,5 +1,5 @@
 import React, { use } from "react";
-import { Legend, Pie, PieChart, Tooltip } from "recharts";
+import { Cell, Legend, Pie, PieChart, Tooltip } from "recharts";
 
 const GymMembership = ({ membershipPromise }) => {
   // const gymMemberShip = [
@@ -8,6 +8,7 @@ const GymMembership = ({ membershipPromise }) => {
   //   { plan: "Premium", members: 35 },
   //   { plan: "Elite", members: 20 },
   // ];
+  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
   const gymMemberShipData = use(membershipPromise);
   // const gymMemberShipData = membershipResponse.data;
   console.log(gymMemberShipData);
@@ -33,6 +34,9 @@ const GymMembership = ({ membershipPromise }) => {
           label
           nameKey={"plan"}
         />
+        {gymMemberShipData.map((entry, index) => (
+          <Cell key={index} fill={COLORS[index % COLORS.length]} />
+        ))}
         <Tooltip />
         <Legend />
       </PieChart>
